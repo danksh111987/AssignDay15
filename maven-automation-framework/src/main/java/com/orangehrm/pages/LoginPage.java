@@ -45,7 +45,7 @@ public class LoginPage {
 		vBtnLogin.click();
 		
 		//on successfull login it should go to homepage.
-		return (new HomePageAfterLogin());
+		return (new HomePageAfterLogin().isHomePageLoaded());
 	}
 	
 
