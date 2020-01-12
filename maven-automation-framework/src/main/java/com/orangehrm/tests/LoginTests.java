@@ -11,8 +11,9 @@ public class LoginTests extends BaseSelenium {
 	public void TC1VerifyAdminLoginSuccess(){
 		LoginPage lp = new LoginPage();
 		
-		lp.checkValidLogin("admin", "admin")
-			.checkWelcometxt("Welcome Admin");
+		lp.isLoginPageLoaded()
+			.checkValidLogin("admin", "admin")
+				.checkWelcometxt("Welcome Admin");
 	}
 
 }
